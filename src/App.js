@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Home';
+import Meal from './Meal';
 
 function App() {
   return (
@@ -9,7 +10,10 @@ function App() {
           <Switch>
             <Route exact path='/'>
               <Home />
-            </Route>    
+            </Route>  
+            <Route path={'/meal'}>
+              <Meal />
+            </Route>  
           </Switch>
         </div>
       </div>
